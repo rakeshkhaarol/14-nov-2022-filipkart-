@@ -16,11 +16,13 @@
                 border: 1px solid red;
             }
             .r_header_top{
-                height: 57px;
+                height: 60px;
+                z-index: 5000;
                 background: #2874F0;
             }
             .r_header_bottom{
                 height: 120px;
+                margin-top: 60px;
                 background: #FFFFFF;
             }
             main{
@@ -28,60 +30,139 @@
             }
             footer > .r_footer_top{
                 height: 2040px;
+                
             }
             footer > .r_footer_bottom{
                 height: 400px;
                 background: #0E1521;
+            }
+            .r_footer_bottom > div:first-child{
+                height: 325px;
+            }
+            .r_footer_bottom > div:last-child{
+                height: 75px;
             }
         </style>
     </head>
     <body>
         <div class="container-fluid p-0">
             <header>
-                <div class="r_tbdr r_header_top">
-                          <nav class="navbar navbar-expand-lg ">
-                                <div class="container">
-                                    <h4 class="text-white ps-5 " style="font-family: 'Carter One', cursive ;">Flipkart</h4>
-                                    <h6 class="btn d-inline-block " style="font-family: 'Carter One', cursive; ">Explore Plus</h6>
-                                  <a class="navbar-brand p-0" href="#">
-                                    
-                                  </a>
-                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                  </button>
-                                        <form class="d-flex  me-4 " role="search">
-                                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                                            <button class="btn btn-outline-success" type="submit">Search</button>
-                                        </form>
-                                    
-                                    <ul>
-                                        <li class="nav-item dropdown text-white">
-                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                              more
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                              <li><a class="dropdown-item" href="#">notification</a></li>
-                                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                                              <li><hr class="dropdown-divider"></li>
-                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            </ul>
-                                          </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </nav>
-                       
-                    </div>
-                    
+                <div class="r_tbdr r_header_top position-fixed w-100 top-0 start-0">
+                    <div class="container r_tbdr h-100 ">header</div>
                 </div>
-                <div class="r_tbdr r_header_bottom"> header top</div>
+                <div class="r_tbdr r_header_bottom"> 
+                    <div class="container r_tbdr h-100 ">
+                        <nav class="navbar navbar-expand-lg h-100">
+                            <div class="container-fluid">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                  <li class="nav-item me-3">
+                                    <a class="nav-link active" aria-current="page" href="#" >
+                                        <img class="img-fluid" width="60px" src="./New folder/1.jpg" alt="">
+                                        <br class="">Top Offers
+                                    </a>
+                                  </li>
+                                  <li class="nav-item me-3">
+                                    <a class="nav-link active" aria-current="page" href="#" >
+                                        <img class="img-fluid" width="60px" src="./New folder/2.jpg" alt="">
+                                        <br class="">Grocery
+                                    </a>
+                                  </li>
+                                  <li class="nav-item me-3">
+                                    <a class="nav-link active" aria-current="page" href="#" >
+                                        <img class="img-fluid" width="60px" src="./New folder/3.jpg" alt="">
+                                        <br class="">Mobiles
+                                    </a>
+                                  </li>
+                                  <li class="nav-item me-3">
+                                    <a class="nav-link active" aria-current="page" href="#" >
+                                        <img class="img-fluid" width="60px" src="./New folder/4.jpeg" alt="">
+                                        <br class="">fashion
+                                    </a>
+                                  </li>
+                                  <li class="nav-item me-3">
+                                    <a class="nav-link active" aria-current="page" href="#" >
+                                        <img class="img-fluid" width="60px" src="./New folder/5.jpg" alt="">
+                                        <br class="">Electronics
+                                    </a>
+                                  </li>
+                                  <li class="nav-item me-3">
+                                    <a class="nav-link active" aria-current="page" href="#" >
+                                        <img class="img-fluid" width="60px" src="./New folder/6.jpg" alt="">
+                                        <br class="">Home
+                                    </a>
+                                  </li>
+                                  <li class="nav-item me-3">
+                                    <a class="nav-link active" aria-current="page" href="#" >
+                                        <img class="img-fluid" width="60px" src="./New folder/7.jpeg" alt="">
+                                        <br class="">appliances
+                                    </a>
+                                  </li>
+                                  <li class="nav-item me-3">
+                                    <a class="nav-link active" aria-current="page" href="#" >
+                                        <img class="img-fluid" width="60px" src="./New folder/8.jpeg" alt="">
+                                        <br class="">Travel
+                                    </a>
+                                  </li>
+                                  <li class="nav-item me-3">
+                                    <a class="nav-link active" aria-current="page" href="#" >
+                                        <img class="img-fluid" width="60px" src="./New folder/9.jpeg" alt="">
+                                        <br class="">buty,toys&more
+                                    </a>
+                                  </li>
+                                  <li class="nav-item me-3">
+                                    <a class="nav-link active" aria-current="page" href="#" >
+                                        <img class="img-fluid" width="60px" src="./New folder/10.jpeg" alt="">
+                                        <br class="">2wheelers
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                    </div>
+                </div>
             </header>
             <main class="r_tbdr ">
-                main
+                <section>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner pt-3 ps-1">
+                          <div class="carousel-item active">
+                            <img src="./slide/2.jpg" class="d-block w-100 " alt="..." style="height: 280px; ;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./slide/4.jpg" class="d-block w-100" alt="..." style="height: 280px; ;">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./slide/2.jpg" class="d-block w-100" alt="..." style="height: 280px; ;">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </section>       
             </main>
             <footer>
-                <div class="r_tbdr r_footer_top">footer top</div>
-                <div class="r_tbdr r_footer_bottom">footer bottom</div>
+                <div class="r_tbdr r_footer_top">
+                    <div class="container r_tbdr h-100 ">header</div>
+                </div>
+                <div class="r_tbdr r_footer_bottom container-fluid">
+                   <div>
+                        <div class="container r_tbdr h-100 ">header</div>
+                   </div>
+                   <div>
+                    <div class="container r_tbdr h-100 ">header</div>
+                   </div>
+                </div>
                 
             </footer>
         </div>
