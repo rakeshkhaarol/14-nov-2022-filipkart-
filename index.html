@@ -12,7 +12,9 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
-            
+            .r_tbdr{
+              border: 1px solid black;
+            }
             .r_header_top{
                 height: 60px;
                 z-index: 5000;
@@ -40,6 +42,12 @@
             .r_footer_bottom > div:last-child{
                 height: 75px;
             }
+            .r_plus_hover:last-child:hover{
+              text-decoration: underline;
+            }
+            .r_attech:focus .r_placeholder_attech{
+              display: block !important;
+            }
             @media (min-width: 1400px){
               .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
                  max-width: 1182px;
@@ -56,47 +64,46 @@
 
         </style>
     </head>
-    <body>
+    <body style="font-family: 'Roboto', sans-serif;">
         <div class="container-fluid p-0">
             <header>
-                <div class="r_tbdr r_header_top position-fixed w-100 top-0 start-0">
-                    <div class="container r_tbdr h-100 ">
+                <div class="r_tbdr r_header_top position-fixed w-100 top-0 start-0 ">
+                    <div class="container r_tbdr h-100 ms-5 ps-5 ">
                       <div class="row h-100 ">
                         <div class="col-1 r_tbdr h-100">
-                          <div class="d-grid ">
+                          <div class="d-grid r_plus_hover">
                             <a href="">
                               <img src="./img/logo.png"  class="img-fluid pt-3">
                             </a>
-                            <a href="#" class=" text-white fs-6  fst-italic r_plus " >Explore plus
+                            <a href="#" class=" text-white fs-6  fst-italic r_plus text-decoration-none " >Explore plus
                             </a>
                           </div>
                         </div>
-                        <div class="col-4 r_tbdr p-2">
-                          <form  class="bg-white h-100 rounded-1 w-100"  >
-                            <div class="row">
-                              <div class="col-10" >
-                                <input type="text" class="btn form-control border-0"  placeholder="search for products brands and more"/>
+                        <div class="col-5 r_tbdr pt-2 pb-2 h-100 ">
+                          <form  class=" h-100 rounded-1 r_attech pe-0 ps-0 shadow-lg bg-light ms-0 mb-0 d-flex position-relative">
+                            <input class="form-control me-0 shadow-none border-0" type="search" placeholder="Search for products,brands and more" aria-label="Search">
+                            <div class="d-none r_placeholder_attech bg-white w-100  position-absolute shadow-sm rounded-1 " style="height: 400px; margin-top: 37px;"></div>
+                            <div class="bg-danger"></div>
+                              <div class=" btn float-end border-0 pt-2 text-primary">
+                                <i class="fa-solid fa-magnifying-glass "></i>
                               </div>
-                              <div class="col-2 btn">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                              </div>
-                            </div>
+
                           </form>
                         </div>
                         <div class="col-6 r_tbdr h-100">
                           <div class="row h-100">
-                            <div class="col-4 r_tbdr h-100  ps-5 pe-1  text-center" style="padding: 13px;">
-                              <button class="btn bg-white h-100 w-100 rounded-1">login</button>
+                            <div class="col-4 r_tbdr h-100  ps-2   text-center pt-2 pb-2">
+                              <button class="btn bg-white h-100 pe-5 ps-5 rounded-1 pt-1 text-primary">login</button>
                             </div>
-                            <div class="col-5 r_tbdr">
-                              <a href="https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect" class="text-white btn text-center p-2 ps-5">become a seller</a>
+                            <div class="col-5 r_tbdr pt-3">
+                              <a href="https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect" class="text-white text-decoration-none text-center ps-3  ">become a seller</a>
                             </div>
-                            <div class="col-3 r_tbdr ">
-                              <nav class="navbar navbar-expand-lg pe-2">
+                            <div class="col-3 r_tbdr  ps-0 pe-5 ">
+                              <nav class="navbar navbar-expand-lg  ps-0 ">
                                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                                   <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle  text-white pe-5  w-75" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      Link
+                                    <a class="nav-link dropdown-toggle  text-white pe-5  w-75 " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      more
                                     </a>
                                     <ul class="dropdown-menu">
                                       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -152,7 +159,7 @@
                                         <br class="">Mobiles
                                     </a>
                                   </li>
-                                  <li class="nav-item me-3">
+                                  <li class="nav-item me-3 pt-2">
                                     <a class="nav-link active" aria-current="page" href="#" >
                                         <img class="img-fluid" width="60px" src="./New folder/4.jpeg" alt="">
                                         <br class="">fashion
@@ -164,7 +171,7 @@
                                         <br class="">Electronics
                                     </a>
                                   </li>
-                                  <li class="nav-item me-3">
+                                  <li class="nav-item me-3 pt-3">
                                     <a class="nav-link active" aria-current="page" href="#" >
                                         <img class="img-fluid" width="60px" src="./New folder/6.jpg" alt="">
                                         <br class="">Home
@@ -176,7 +183,7 @@
                                         <br class="">appliances
                                     </a>
                                   </li>
-                                  <li class="nav-item me-3">
+                                  <li class="nav-item me-3 pt-3">
                                     <a class="nav-link active" aria-current="page" href="#" >
                                         <img class="img-fluid" width="60px" src="./New folder/8.jpeg" alt="">
                                         <br class="">Travel
