@@ -45,8 +45,12 @@
             .r_plus_hover:last-child:hover{
               text-decoration: underline;
             }
-            .r_attech:focus .r_placeholder_attech{
+            .r_attech:hover .r_placeholder_attech{
               display: block !important;
+              
+            }
+            .r_placeholder_attech button:hover{
+              background: #f4f8ff;
             }
             @media (min-width: 1400px){
               .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -82,7 +86,19 @@
                         <div class="col-5 r_tbdr pt-2 pb-2 h-100 ">
                           <form  class=" h-100 rounded-1 r_attech pe-0 ps-0 shadow-lg bg-light ms-0 mb-0 d-flex position-relative">
                             <input class="form-control me-0 shadow-none border-0" type="search" placeholder="Search for products,brands and more" aria-label="Search">
-                            <div class="d-none r_placeholder_attech bg-white w-100  position-absolute shadow-sm rounded-1 " style="height: 400px; margin-top: 37px;"></div>
+                            <div class="d-none r_placeholder_attech bg-white w-100  position-absolute shadow-sm rounded-1 " style="height: 400px; margin-top: 37px;">
+                              <div class="list-group ">
+                                
+                                <button type="button" class="list-group-item list-group-item-action " ><i class="fa-solid fa-magnifying-glass pe-4 "></i>A second button item</button>
+                                <button type="button" class="list-group-item list-group-item-action"><i class="fa-solid fa-magnifying-glass pe-4"></i>A third button item</button>
+                                <button type="button" class="list-group-item list-group-item-action"><i class="fa-solid fa-magnifying-glass pe-4 "></i>A fourth button item</button>
+                                <button type="button" class="list-group-item list-group-item-action"><i class="fa-solid fa-magnifying-glass pe-4 "></i>A disabled button item</button>
+                                <button type="button" class="list-group-item list-group-item-action"><i class="fa-solid fa-magnifying-glass pe-4 "></i>A disabled button item</button>
+                                <button type="button" class="list-group-item list-group-item-action"><i class="fa-solid fa-magnifying-glass pe-4 "></i>A disabled button item</button>
+                                <button type="button" class="list-group-item list-group-item-action"><i class="fa-solid fa-magnifying-glass pe-4 "></i>A disabled button item</button>
+                                <button type="button" class="list-group-item list-group-item-action"><i class="fa-solid fa-magnifying-glass pe-4 "></i>A disabled button item</button>
+                              </div>
+                            </div>
                             <div class="bg-danger"></div>
                               <div class=" btn float-end border-0 pt-2 text-primary">
                                 <i class="fa-solid fa-magnifying-glass "></i>
