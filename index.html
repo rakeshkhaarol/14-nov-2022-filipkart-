@@ -12,9 +12,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
-            .r_tbdr{
-              border: 1px solid black;
-            }
+           
             .r_header_top{
                 height: 60px;
                 z-index: 5000;
@@ -30,7 +28,7 @@
             }
             footer > .r_footer_top{
                 height: 2040px;
-                
+
             }
             footer > .r_footer_bottom{
                 height: 400px;
@@ -51,12 +49,9 @@
             }
             .r_placeholder_attech button:hover{
               background: #f4f8ff;
+            
             }
-            @media (min-width: 1400px){
-              .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-                 max-width: 1182px;
-                }
-            }
+           
             .r_plus{
               font-size: 0.5em !important;
               /*
@@ -65,16 +60,40 @@
                 */
                 background: url("./slide/plus.jpg") right center/contain no-repeat;
             }
+            .r_login{
+              height: 350px; 
+              width: 250px;
+              margin-left: -55px;
+            
+              
+            }
+            .arrow-up {
+              width: 0; 
+              height: 0; 
+              border-left: 15px solid transparent;
+              border-right: 15px solid transparent;
+              margin-top:  -364px;
+              margin-left: 56px;
+              border-bottom: 15px solid white;
+            }
+            .r_log:hover .r_block{
+              display: block !important;
+            }
 
+            @media (min-width: 1400px){
+              .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+                 max-width: 1292px;
+                }
+            }
         </style>
     </head>
     <body style="font-family: 'Roboto', sans-serif;">
         <div class="container-fluid p-0">
             <header>
-                <div class="r_tbdr r_header_top position-fixed w-100 top-0 start-0 ">
+                <div class="container-fluid r_tbdr r_header_top position-fixed w-100 top-0 start-0 ">
                     <div class="container r_tbdr h-100 ms-5 ps-5 ">
-                      <div class="row h-100 ">
-                        <div class="col-1 r_tbdr h-100">
+                      <div class="row h-100" style="text-align: center; ">
+                        <div class="col-1 r_tbdr h-100 ">
                           <div class="d-grid r_plus_hover">
                             <a href="">
                               <img src="./img/logo.png"  class="img-fluid pt-3">
@@ -86,17 +105,14 @@
                         <div class="col-5 r_tbdr pt-2 pb-2 h-100 ">
                           <form  class=" h-100 rounded-1 r_attech pe-0 ps-0 shadow-lg bg-light ms-0 mb-0 d-flex position-relative">
                             <input class="form-control me-0 shadow-none border-0" type="search" placeholder="Search for products,brands and more" aria-label="Search">
-                            <div class="d-none r_placeholder_attech bg-white w-100  position-absolute shadow-sm rounded-1 " style="height: 400px; margin-top: 37px;">
-                              <div class="list-group ">
+                            <div class="d-none r_placeholder_attech bg-white w-100  position-absolute shadow-sm rounded-1 " style="min-height: 300px; margin-top: 37px;">
+                              <div class="list-groupp">
                                 
-                                <button type="button" class="list-group-item list-group-item-action " ><i class="fa-solid fa-magnifying-glass pe-4 "></i>A second button item</button>
-                                <button type="button" class="list-group-item list-group-item-action"><i class="fa-solid fa-magnifying-glass pe-4"></i>A third button item</button>
-                                <button type="button" class="list-group-item list-group-item-action"><i class="fa-solid fa-magnifying-glass pe-4 "></i>A fourth button item</button>
-                                <button type="button" class="list-group-item list-group-item-action"><i class="fa-solid fa-magnifying-glass pe-4 "></i>A disabled button item</button>
-                                <button type="button" class="list-group-item list-group-item-action"><i class="fa-solid fa-magnifying-glass pe-4 "></i>A disabled button item</button>
-                                <button type="button" class="list-group-item list-group-item-action"><i class="fa-solid fa-magnifying-glass pe-4 "></i>A disabled button item</button>
-                                <button type="button" class="list-group-item list-group-item-action"><i class="fa-solid fa-magnifying-glass pe-4 "></i>A disabled button item</button>
-                                <button type="button" class="list-group-item list-group-item-action"><i class="fa-solid fa-magnifying-glass pe-4 "></i>A disabled button item</button>
+                                <button type="button" class="list-group-item list-group-item-action "><i class="fa-solid fa-magnifying-glass pe-0"></i>A second button item</button>
+                                
+                                <a href="#" class=" d-block w-100 p-2 ps-4 text-secondary"> <i class="fa-solid fa-rotate-right me-3"></i>gopro</a> 
+                                
+                               
                               </div>
                             </div>
                             <div class="bg-danger"></div>
@@ -108,8 +124,10 @@
                         </div>
                         <div class="col-6 r_tbdr h-100">
                           <div class="row h-100">
-                            <div class="col-4 r_tbdr h-100  ps-2   text-center pt-2 pb-2">
-                              <button class="btn bg-white h-100 pe-5 ps-5 rounded-1 pt-1 text-primary">login</button>
+                            <div class="col-4 r_tbdr h-100  ps-2   text-center pt-2 pb-2 r_log">
+                              <button class="btn bg-white h-100 pe-5 ps-5 rounded-1 pt-1 text-primary ">login</button>
+                              <div class="d-none bg-white r_login mt-3 r_block shadow-sm" >a</div>
+                              <div class="arrow-up  "></div>
                             </div>
                             <div class="col-5 r_tbdr pt-3">
                               <a href="https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect" class="text-white text-decoration-none text-center ps-3  ">become a seller</a>
@@ -149,7 +167,7 @@
                     </div>
                 </div>
                 <div class="r_tbdr r_header_bottom"> 
-                    <div class="container r_tbdr h-100 ">
+                    <div class="container-fluid r_tbdr h-100">
                         <nav class="navbar navbar-expand-lg h-100">
                             <div class="container-fluid">
                               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -163,55 +181,55 @@
                                         <br class="">Top Offers
                                     </a>
                                   </li>
-                                  <li class="nav-item me-3">
+                                  <li class="nav-item me-4">
                                     <a class="nav-link active" aria-current="page" href="#" >
                                         <img class="img-fluid" width="60px" src="./New folder/2.jpg" alt="">
                                         <br class="">Grocery
                                     </a>
                                   </li>
-                                  <li class="nav-item me-3">
+                                  <li class="nav-item me-4">
                                     <a class="nav-link active" aria-current="page" href="#" >
                                         <img class="img-fluid" width="60px" src="./New folder/3.jpg" alt="">
                                         <br class="">Mobiles
                                     </a>
                                   </li>
-                                  <li class="nav-item me-3 pt-2">
+                                  <li class="nav-item me-4 ">
                                     <a class="nav-link active" aria-current="page" href="#" >
                                         <img class="img-fluid" width="60px" src="./New folder/4.jpeg" alt="">
                                         <br class="">fashion
                                     </a>
                                   </li>
-                                  <li class="nav-item me-3">
+                                  <li class="nav-item me-4">
                                     <a class="nav-link active" aria-current="page" href="#" >
                                         <img class="img-fluid" width="60px" src="./New folder/5.jpg" alt="">
                                         <br class="">Electronics
                                     </a>
                                   </li>
-                                  <li class="nav-item me-3 pt-3">
+                                  <li class="nav-item me-4 ">
                                     <a class="nav-link active" aria-current="page" href="#" >
                                         <img class="img-fluid" width="60px" src="./New folder/6.jpg" alt="">
                                         <br class="">Home
                                     </a>
                                   </li>
-                                  <li class="nav-item me-3">
+                                  <li class="nav-item me-4">
                                     <a class="nav-link active" aria-current="page" href="#" >
                                         <img class="img-fluid" width="60px" src="./New folder/7.jpeg" alt="">
                                         <br class="">appliances
                                     </a>
                                   </li>
-                                  <li class="nav-item me-3 pt-3">
+                                  <li class="nav-item me-4 ">
                                     <a class="nav-link active" aria-current="page" href="#" >
                                         <img class="img-fluid" width="60px" src="./New folder/8.jpeg" alt="">
                                         <br class="">Travel
                                     </a>
                                   </li>
-                                  <li class="nav-item me-3">
+                                  <li class="nav-item me-4">
                                     <a class="nav-link active" aria-current="page" href="#" >
                                         <img class="img-fluid" width="60px" src="./New folder/9.jpeg" alt="">
                                         <br class="">buty,toys&more
                                     </a>
                                   </li>
-                                  <li class="nav-item me-3">
+                                  <li class="nav-item me-0">
                                     <a class="nav-link active" aria-current="page" href="#" >
                                         <img class="img-fluid" width="60px" src="./New folder/10.jpeg" alt="">
                                         <br class="">2wheelers
