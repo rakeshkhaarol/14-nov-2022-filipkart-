@@ -43,12 +43,16 @@
             .r_plus_hover:last-child:hover{
               text-decoration: underline;
             }
-            .r_attech:hover .r_placeholder_attech{
-              display: block !important;
-              
+            .r_attech input[type="text"]:focus{
+              box-shadow: none;
             }
-            .r_placeholder_attech button:hover{
+            .r_attech input[type="text"]:focus + .r_placeholder_attech{
+                display: block !important;
+            }
+            .r_placeholder_attech >  a:hover{
               background: #f4f8ff;
+             
+             
             
             }
            
@@ -58,7 +62,8 @@
                     CSS Syntax
                     background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
                 */
-                background: url("./slide/plus.jpg") right center/contain no-repeat;
+                background: url("./slide/plus.jpg") right center/contain no-repeat ;
+                
             }
             .r_login{
               height: 350px; 
@@ -87,8 +92,8 @@
             }
         </style>
     </head>
-    <body style="font-family: 'Roboto', sans-serif;">
-        <div class="container-fluid p-0">
+    <body style="font-family: 'Roboto', sans-serif;" >
+        <div class="container-fluid p-0 ">
             <header>
                 <div class="container-fluid r_tbdr r_header_top position-fixed w-100 top-0 start-0 ">
                     <div class="container r_tbdr h-100 ms-5 ps-5 ">
@@ -96,37 +101,51 @@
                         <div class="col-1 r_tbdr h-100 ">
                           <div class="d-grid r_plus_hover">
                             <a href="">
-                              <img src="./img/logo.png"  class="img-fluid pt-3">
+                              <img width="70px" src="./img/logo.png"  class=" pt-3" >
                             </a>
-                            <a href="#" class=" text-white fs-6  fst-italic r_plus text-decoration-none " >Explore plus
+                            <a href="#" class=" text-white fs-6  fst-italic r_plus text-decoration-none " > Explore  plus
                             </a>
+                           
                           </div>
                         </div>
                         <div class="col-5 r_tbdr pt-2 pb-2 h-100 ">
                           <form  class=" h-100 rounded-1 r_attech pe-0 ps-0 shadow-lg bg-light ms-0 mb-0 d-flex position-relative">
-                            <input class="form-control me-0 shadow-none border-0" type="search" placeholder="Search for products,brands and more" aria-label="Search">
-                            <div class="d-none r_placeholder_attech bg-white w-100  position-absolute shadow-sm rounded-1 " style="min-height: 300px; margin-top: 37px;">
-                              <div class="list-groupp">
-                                
-                                <button type="button" class="list-group-item list-group-item-action "><i class="fa-solid fa-magnifying-glass pe-0"></i>A second button item</button>
-                                
-                                <a href="#" class=" d-block w-100 p-2 ps-4 text-secondary"> <i class="fa-solid fa-rotate-right me-3"></i>gopro</a> 
-                                
+                            <input class="form-control me-0 shadow-none border-0" type="text" placeholder="Search for products,brands and more" aria-label="Search">
+                            <div class="d-none r_placeholder_attech bg-white w-100  position-absolute shadow-sm rounded-0 " style="min-height: 300px; margin-top: 37px;">
+                              <div class=" w-100">
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item border-0 p-0" > 
+                                    <a href="#" class=" d-block w-100 p-2 ps-4 text-secondary"> <i class="fa-solid fa-rotate-right me-3"></i>gopro</a>
+                                  </li>
+                                </ul>
                                
+                                
                               </div>
                             </div>
-                            <div class="bg-danger"></div>
+                            <div class=" bg-success"></div>
                               <div class=" btn float-end border-0 pt-2 text-primary">
                                 <i class="fa-solid fa-magnifying-glass "></i>
                               </div>
 
                           </form>
                         </div>
+
+
+
+
                         <div class="col-6 r_tbdr h-100">
                           <div class="row h-100">
-                            <div class="col-4 r_tbdr h-100  ps-2   text-center pt-2 pb-2 r_log">
-                              <button class="btn bg-white h-100 pe-5 ps-5 rounded-1 pt-1 text-primary ">login</button>
-                              <div class="d-none bg-white r_login mt-3 r_block shadow-sm" >a</div>
+                            <div class="col-4 r_tbdr h-100  ps-2   text-center pt-2 pb-1 r_log ">
+                              <button class="btn bg-white h-75 pe-5 ps-5 rounded-1 pt-2 text-primary mt-1 mb-1">Login</button>
+                              <div class="d-none bg-white r_login mt-3 r_block shadow-sm" >
+                                <a href="" class="text-decoration-none pe-5 shadow-sm">new customer?</a>
+                                <a href="#" class="shadow-sm">sign up</a>
+                                <ul>
+                                  <li class="nav nav-item border-bottom">
+                                    <a href="#" class="btn ps-3 w-100 rounded-0 text-start text-decoration-none"> <i class="fa-solid fa-user me-3"></i> My Profile</a>
+                                  </li>
+                                </ul>
+                              </div>
                               <div class="arrow-up  "></div>
                             </div>
                             <div class="col-5 r_tbdr pt-3">
