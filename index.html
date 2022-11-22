@@ -12,19 +12,36 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
-           
+            .r_tbdr{
+              border: 1px solid blue;
+            }
             .r_header_top{
                 height: 60px;
                 z-index: 5000;
                 background: #2874F0;
             }
             .r_header_bottom{
-                height: 120px;
+                height: 115px;
                 margin-top: 60px;
                 background: #FFFFFF;
             }
+            .r_bottom_submenu{
+              height: 500px;
+              width: 450px;
+              background: chocolate;
+              z-index: 1000;
+              left: 140px;
+            }
+            .r_bottom_submenu_submenu_submenu{
+              height: 500px;
+              width: 225px;
+            }
+            .r_bottom_submenu_submenu > li:hover > ul {
+              display: block !important;
+            }
             main{
                 height: 7040px;
+                background:#F1F3F6;
             }
             footer > .r_footer_top{
                 height: 2040px;
@@ -66,7 +83,7 @@
                 
             }
             .r_login{
-              height: 350px; 
+              min-height: 300px; 
               width: 250px;
               margin-left: -55px;
             
@@ -84,7 +101,17 @@
             .r_log:hover .r_block{
               display: block !important;
             }
-
+          
+            .r_login_menu > .r_login_submenu:hover{
+              background: #f4f8ff;
+            }
+            div > [type="button"]{
+              width: 5%;
+              height: 110px;
+              opacity: 1;
+              background: red;
+              margin-top: 100px;
+            }
             @media (min-width: 1400px){
               .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
                  max-width: 1292px;
@@ -140,9 +167,24 @@
                               <div class="d-none bg-white r_login mt-3 r_block shadow-sm" >
                                 <a href="" class="text-decoration-none pe-5 shadow-sm">new customer?</a>
                                 <a href="#" class="shadow-sm">sign up</a>
-                                <ul>
-                                  <li class="nav nav-item border-bottom">
-                                    <a href="#" class="btn ps-3 w-100 rounded-0 text-start text-decoration-none"> <i class="fa-solid fa-user me-3"></i> My Profile</a>
+                                <ul class="w-100">
+                                  <li class="nav nav-item border-bottom pt-2 text-decoration-none r_login_menu">
+                                    <a href="#" class="btn ps-3 w-100 rounded-0 text-start text-decoration-none me-0  r_login_submenu"> <i class="fa-regular fa-user pe-3 " style="margin-left: -35px; height: 25px;"></i> My Profile</a>
+                                  </li>
+                                  <li class="nav nav-item border-bottom pt-0 text-decoration-none  r_login_menu">
+                                    <a href="#" class="btn ps-3 w-100 rounded-0 text-start text-decoration-none me-0 r_login_submenu"> <i class="fa-solid fa-plus pe-3 " style="margin-left: -35px;  height: 25px;"></i> flipkart plus zone</a>
+                                  </li>
+                                  <li class="nav nav-item border-bottom pt-0 text-decoration-none r_login_menu">
+                                    <a href="#" class="btn ps-3 w-100 rounded-0 text-start text-decoration-none me-0 h-100 w-100 r_login_submenu" > <i class="fa-solid fa-boxes-packing pe-3 " style="margin-left: -35px; height: 25px; "></i> orders</a>
+                                  </li>
+                                  <li class="nav nav-item border-bottom pt-0 text-decoration-none r_login_menu">
+                                    <a href="#" class="btn ps-3 w-100 rounded-0 text-start text-decoration-none me-0 h-100 w-100 r_login_submenu" ><i class="fa-solid fa-heart pe-3 " style="margin-left: -35px; height: 25px; "></i>wishlist</a>
+                                  </li>
+                                  <li class="nav nav-item border-bottom pt-0 text-decoration-none r_login_menu">
+                                    <a href="#" class="btn ps-3 w-100 rounded-0 text-start text-decoration-none me-0 h-100 w-100 r_login_submenu" ><i class="fa-solid fa-box pe-3 " style="margin-left: -35px; height: 25px; "></i>rewards</a>
+                                  </li>
+                                  <li class="nav nav-item border-bottom pt-0 text-decoration-none r_login_menu">
+                                    <a href="#" class="btn ps-3 w-100 rounded-0 text-start text-decoration-none me-0 h-100 w-100 r_login_submenu" ><i class="fa-solid fa-gift pe-3 " style="margin-left: -35px; height: 25px; "></i>rewards</a>
                                   </li>
                                 </ul>
                               </div>
@@ -217,6 +259,52 @@
                                         <img class="img-fluid" width="60px" src="./New folder/4.jpeg" alt="">
                                         <br class="">fashion
                                     </a>
+                                    <ul class="nav  row r_bottom_submenu position-absolute">
+                                      <li class=" col-6 r_tbdr p-0">
+                                        <ul class="nav flex-column r_bottom_submenu_submenu position-relative">
+                                          <li class="nav  nav-item w-100 r_tbdr">
+                                            <a href="#" class="nav-link active bg-danger w-100">Man's Top Wear</a>
+                                              <ul class="nav flex-column  bg-info r_bottom_submenu_submenu_submenu position-absolute start-100 d-none">
+                                                <li class="nav-link active">more in men's top wear</li>
+                                                <li  class="nav nav-item">
+                                                  <a href="# " class="nav-link ">All</a>
+                                                </li>
+                                                <li  class="nav nav-item">
+                                                  <a href="# " class="nav-link ">All</a>
+                                                </li>
+                                                <li  class="nav nav-item">
+                                                  <a href="# " class="nav-link ">All</a>
+                                                </li>
+                                                <li  class="nav nav-item">
+                                                  <a href="# " class="nav-link ">All</a>
+                                                </li>
+                                                <li  class="nav nav-item">
+                                                  <a href="# " class="nav-link ">All</a>
+                                                </li>
+                                                <li  class="nav nav-item">
+                                                  <a href="# " class="nav-link ">All</a>
+                                                </li>
+                                              </ul>
+                                          </li>
+                                          <li class="nav  nav-item r_tbdr">
+                                            <a href="#" class="nav-link active bg-danger w-100 "> Man's Bottom Wear</a>
+                                            <ul  class="nav flex-column d-none bg-success r_bottom_submenu_submenu_submenu position-absolute start-100 top-0">
+                                              <li class="nav nav-item"> 
+                                                <a href="" class="nav-link"></a>
+                                              </li>
+                                            </ul>
+                                          </li>
+                                          
+                                        </ul>
+                                      </li>
+                                      <li class="col-6 r_tbdr">
+                                        <ul>
+                                          <li>
+
+                                          </li>
+                                        </ul>
+                                      </li>
+                                    </ul>
                                   </li>
                                   <li class="nav-item me-4">
                                     <a class="nav-link active" aria-current="page" href="#" >
@@ -261,9 +349,9 @@
                     </div>
                 </div>
             </header>
-            <main class="r_tbdr ">
+            <main class="r_tbdr shadow-sm">
                 <section>
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
                         <div class="carousel-inner pt-3 ps-1">
                           <div class="carousel-item active">
                             <img src="./slide/5.jpg" class="d-block w-100 " alt="..." style="height: 280px; ;">
@@ -275,12 +363,12 @@
                             <img src="./slide/2.jpg" class="d-block w-100" alt="..." style="height: 280px; ;">
                           </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <button class="carousel-control-prev rounded-1 bg-white" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <i class="fa-solid fa-angle-left text-dark fs-2"></i>
                           <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <button class="carousel-control-next rounded-1 bg-white" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <i class="fa-solid fa-angle-right text-dark fs-2"></i>
                           <span class="visually-hidden">Next</span>
                         </button>
                       </div>
