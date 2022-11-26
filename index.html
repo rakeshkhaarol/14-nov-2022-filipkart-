@@ -102,19 +102,22 @@
             .r_login_menu > .r_login_submenu:hover{
               background: #f4f8ff;
             }
-            div > [type="button"]{
-              width: 5%;
+            .r_button_main > [type="button"]{
+              width: 4%;
               height: 110px;
-              opacity: 1;
+              opacity: 1 !important;
               background: red;
               margin-top: 100px;
             }
             .r_main_section2_menu{
               height: 360px !important;
+              
+             
              
             }
             .r_main_section2_submenu{
               width: 230px;
+             
              
             }
 
@@ -134,7 +137,7 @@
                         <div class="col-1 r_tbdr h-100 ">
                           <div class="d-grid r_plus_hover">
                             <a href="">
-                              <img width="70px" src="./img/logo.png"  class=" pt-3" >
+                              <img src="./img/logo.png" class=" pt-3 w-100" >
                             </a>
                             <a href="#" class=" text-white fs-6  fst-italic r_plus text-decoration-none " > Explore  plus
                             </a>
@@ -199,8 +202,8 @@
                             <div class="col-4 r_tbdr h-100  ps-2   text-center pt-2 pb-1 r_log ">
                               <button class="btn bg-white h-75 pe-5 ps-5 rounded-1 pt-1 text-primary mt-1 mb-1 ">Login</button>
                               <div class="d-none bg-white r_login mt-3 r_block shadow-sm" >
-                                <a href="" class="text-decoration-none pe-5 shadow-sm">new customer?</a>
-                                <a href="#" class="shadow-sm">sign up</a>
+                                <a href="" class=" pb-3 text-decoration-none pe-5 shadow-sm">new customer?</a>
+                                <a href="#" class="pb-3 shadow-sm text-decoration-none">sign up</a>
                                 <ul class="w-100">
                                   <li class="nav nav-item border-bottom pt-2 text-decoration-none r_login_menu">
                                     <a href="#" class="btn ps-3 w-100 rounded-0 text-start text-decoration-none me-0  r_login_submenu"> <i class="fa-regular fa-user pe-3 " style="margin-left: -35px; height: 25px;"></i> My Profile</a>
@@ -385,9 +388,9 @@
                 </div>
             </header>
             <main class="r_tbdr shadow-sm ">
-                <section>
-                    <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
-                        <div class="carousel-inner pt-3 ps-1">
+                <div>
+                    <div id="carouselExampleControls" class="carousel slide r_button_main" data-bs-ride="carousel">
+                        <div class="carousel-inner pt-3 ps-1 ">
                           <div class="carousel-item active">
                             <img src="./slide/5.jpg" class="d-block w-100 " alt="..." style="height: 280px; ;">
                           </div>
@@ -407,25 +410,123 @@
                           <span class="visually-hidden">Next</span>
                         </button>
                       </div>
-                </section>
-                <section>
-                  <div class="row r_tbdr h-100 r_main_section2_menu mt-2 mb-2 m-0 position-relative">
-                    <div class="col-8 ">
-                      
-                    <div class="col-2 r_tbdr d-flex  h-100 start-0  position-absolute r_main_section2_submenu">
-                      <h3 class="text-center" style="padding-top: 90px;">Best Of Electronics</h3>
-                      <input type="button" value="VIEW ALL" class="bg-primary text-white btn rounded-1 position-absolute me-5 mt-5" style="width: 100px; height: 40px ; margin: auto 65px; bottom: 120px;"/>
-                    </div>
-                    <div class="col-2">
-                      <div class="r_tbdr h-100 end-0 position-absolute r_main_section2_submenu">
-                        <a href="#" >
-                          <img src="./main/section2/1.webp" class="img-thumbnail" alt="">
-                        </a>
+                </div>
+                <div class="position-relative p-0 m-0">
+                  <div class="row r_tbdr h-100 r_main_section2_menu mt-2 mb-2 m-0 ">
+                    <div class="col-10 r_tbdr">
+                      <div class="row h-100">
+                        <div class="col-3  r_tbdr h-100">
+                          <h3 class="text-center" style="padding-top: 90px; ">Best Of Electronics</h3>
+                          <input type="button" value="VIEW ALL" class="bg-primary text-white btn rounded-1 position-absolute me-5 mt-5" style="width: 100px; height: 40px ; margin: auto 65px; bottom: 120px;"/>
+                        </div>
+                        <div class="col-9 r_tbdr h-100 p-0">
+                          <div id="carouselExampleControls2" class="carousel slide bg-white h-100 r_button_main" data-bs-ride="carousel">
+                            <div class="carousel-inner h-100">
+                              <div class="carousel-item active r_tbdr h-100">
+                                <div class="row h-100">
+                                  <div class="col r_tbdr">
+                                    <a href="#" class="d-block h-100 text-decoration-none text-center pt-5">
+                                      <img alt=""  class="img-fluid mt-3" src="./main/section2/2.webp" >
+                                      <h5 class="pt-5">Printers</h5>
+                                      <span class="text-success">From ₹3999</span>
+                                      <h4 class="pt-2 fs-6 text-secondary">HP</h4>
+                                    </a>
+                                  </div>
+                                  <div class="col r_tbdr">
+                                    <a href="#" class="d-block h-100 text-decoration-none text-center pt-5">
+                                      <img alt=""  class="img-fluid mt-3" src="./main/section2/4.jpg" >
+                                      <h5 class="pt-5  fs-6">Top mirrorless cameras</h5>
+                                      <span class="text-success">shop now!</span>
+                                      <h4 class="pt-2 fs-6 text-secondary">canan,sony,fujifilm....</h4>
+                                    </a>
+                                  </div>
+                                  <div class="col r_tbdr">
+                                    <a href="#" class="d-block h-100 text-decoration-none text-center pt-5">
+                                      <img alt=""  class="img-fluid mt-4" src="./main/section2/6.webp" >
+                                      <h5 class="pt-5">Printers</h5>
+                                      <span class="text-success">From ₹2336</span>
+                                      <h4 class="pt-2 fs-6 text-secondary">canon</h4>
+                                    </a>
+                                  </div>
+                                 
+                                </div>
+                              </div>
+                              <div class="carousel-item r_tbdr h-100">
+                                  <div class="row h-100">
+                                    <div class="col r_tbdr">
+                                      <a href="#" class="d-block h-100 text-decoration-none text-center pt-4">
+                                        <img alt=""  class="img-fluid mt-1" src="./main/section2/5.webp" >
+                                        <h5 class="pt-4">Best of hair dryers</h5>
+                                        <span class="text-success">From ₹399</span>
+                                        <h4 class="pt-2 fs-6 text-secondary ">philips,nova,hevalles & more</h4>
+                                      </a>
+                                    </div>
+                                    <div class="col r_tbdr">
+                                      <a href="#" class="d-block h-100 text-decoration-none text-center pt-5">
+                                        <img alt=""  class="img-fluid mt-5" src="./main/section2/7.webp" >
+                                        <h5 class="pt-5  fs-6">monitores</h5>
+                                        <span class="text-success">From ₹6599</span>
+                                        <h4 class="pt-2 fs-6 text-secondary">acer</h4>
+                                      </a>
+                                    </div>
+                                    <div class="col r_tbdr">
+                                      <a href="#" class="d-block h-100 text-decoration-none text-center pt-5">
+                                        <img alt=""  class="img-fluid mt-4" src="./main/section2/8.webp" >
+                                        <h5 class="pt-5">Monitores</h5>
+                                        <span class="text-success">From ₹9999</span>
+                                        <h4 class="pt-2 fs-6 text-secondary">SAMSANG</h4>
+                                      </a>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="carousel-item r_tbdr h-100">
+                                <div class="row">
+                                  <div class="col r_tbdr">
+                                    <a href="#" class="d-block h-100 text-decoration-none text-center pt-5">
+                                      <img alt=""  class="img-fluid mt-4" src="./main/section2/9.webp" >
+                                      <h5 class="pt-5">premium power banks</h5>
+                                      <span class="text-success">From ₹9999</span>
+                                      <h4 class="pt-2 fs-6 text-secondary">Mi,realmi & more</h4>
+                                    </a>
+                                  </div>
+                                  <div class="col r_tbdr">
+                                    <a href="#" class="d-block h-100 text-decoration-none text-center pt-5">
+                                      <img alt=""  class="img-fluid mt-4" src="./main/section2/10.webp" >
+                                      <h5 class="pt-5">projectors</h5>
+                                      <span class="text-success">From ₹9999</span>
+                                      <h4 class="pt-2 fs-6 text-secondary">ZEBRONIKS</h4>
+                                    </a>
+                                  </div>
+                                  <div class="col r_tbdr">
+                                    <a href="#" class="d-block h-100 text-decoration-none text-center pt-5">
+                                      <img alt=""  class="img-fluid mt-4" src="./main/section2/11.webp" >
+                                      <h5 class="pt-5">projectors</h5>
+                                      <span class="text-success">From ₹10999</span>
+                                      <h4 class="pt-2 fs-6 text-secondary">ZEBRONIKS</h4>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev bg-white rounded-1 shadow-sm" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                              <i class="fa-solid fa-angle-left text-dark fs-2"></i>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next bg-white rounded-1 shadow-sm" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                              <i class="fa-solid fa-angle-right text-dark fs-2"></i>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </div>
+                    <div class="col-2 r_tbdr p-0">
+                        <a href="#" >
+                          <img src="./main/section2/1.webp" class="img-fluid img-thumbnail h-100 w-100 " alt="">
+                        </a>
+                    </div>
                   </div>
-                 
-                </section>     
+                </div>
             </main>
             <footer>
                 <div class="r_tbdr r_footer_top">
@@ -447,3 +548,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
