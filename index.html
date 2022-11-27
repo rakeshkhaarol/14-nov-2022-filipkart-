@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
             .r_tbdr{
-              border: 1px solid blue;
+              border: 1px solid red;
             }
             .r_header_top{
                 height: 60px;
@@ -66,7 +66,7 @@
             .r_attech input[type="text"]:focus + .r_placeholder_attech{
                 display: block !important;
             }
-            div > ul > li > a:hover{
+            div.r_search_menu > ul > li > a:hover{
               background: #f4f8ff !important;
             }
            
@@ -111,6 +111,7 @@
             }
             .r_main_section2_menu{
               height: 360px !important;
+            
               
              
              
@@ -120,11 +121,19 @@
              
              
             }
+            .r_fs-7{
+              font-size: 0.9em;
+            }
 
             @media (min-width: 1400px){
               .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
                  max-width: 1292px;
                 }
+            }
+            @media (min-width: 1500px){
+              .r_footer_bottom_last{
+                max-width: 1450px !important;
+              }
             }
         </style>
     </head>
@@ -148,7 +157,7 @@
                           <form  class=" h-100 rounded-1 r_attech pe-0 ps-0 shadow-lg bg-light ms-0 mb-0 d-flex position-relative">
                             <input class="form-control me-0 shadow-none border-0" type="text" placeholder="Search for products,brands and more" aria-label="Search">
                             <div class="d-none r_placeholder_attech bg-white w-100  position-absolute shadow-sm rounded-0 " style="min-height: 300px; margin-top: 37px;">
-                              <div class=" w-100">
+                              <div class=" w-100 r_search_menu">
                                 <ul class="list-group list-group-flush">
                                   <li class="list-group-item border-0 p-0" > 
                                     <a href="#" class=" d-block w-100 p-2 ps-3 text-dark text-start" > <i class="fa-solid fa-clock-rotate-left me-3"></i>gopro</a>
@@ -392,10 +401,10 @@
                     <div id="carouselExampleControls" class="carousel slide r_button_main" data-bs-ride="carousel">
                         <div class="carousel-inner pt-3 ps-1 ">
                           <div class="carousel-item active">
-                            <img src="./slide/5.jpg" class="d-block w-100 " alt="..." style="height: 280px; ;">
+                            <img src="./slide/12.webp" class="d-block w-100 " alt="..." style="height: 280px; ;">
                           </div>
                           <div class="carousel-item">
-                            <img src="./slide/2.jpg" class="d-block w-100" alt="..." style="height: 280px; ;">
+                            <img src="./slide/11.webp" class="d-block w-100" alt="..." style="height: 280px; ;">
                           </div>
                           <div class="carousel-item">
                             <img src="./slide/2.jpg" class="d-block w-100" alt="..." style="height: 280px; ;">
@@ -412,12 +421,12 @@
                       </div>
                 </div>
                 <div class="position-relative p-0 m-0">
-                  <div class="row r_tbdr h-100 r_main_section2_menu mt-2 mb-2 m-0 ">
+                  <div class="row r_tbdr h-100 r_main_section2_menu mt-2 mb-2 m-0 d-flex">
                     <div class="col-10 r_tbdr">
                       <div class="row h-100">
                         <div class="col-3  r_tbdr h-100">
                           <h3 class="text-center" style="padding-top: 90px; ">Best Of Electronics</h3>
-                          <input type="button" value="VIEW ALL" class="bg-primary text-white btn rounded-1 position-absolute me-5 mt-5" style="width: 100px; height: 40px ; margin: auto 65px; bottom: 120px;"/>
+                          <input type="button" value="VIEW ALL" class="bg-primary text-white btn rounded-1 position-absolute me-5 mt-5gu" style="width: 100px; height: 40px ; margin: auto 65px; bottom: 120px;"/>
                         </div>
                         <div class="col-9 r_tbdr h-100 p-0">
                           <div id="carouselExampleControls2" class="carousel slide bg-white h-100 r_button_main" data-bs-ride="carousel">
@@ -529,18 +538,47 @@
                 </div>
             </main>
             <footer>
-                <div class="r_tbdr r_footer_top">
+                <div class="r_tbdr r_footer_top h-100">
                     <div class="container r_tbdr h-100 ">header</div>
                 </div>
                 <div class="r_tbdr r_footer_bottom container-fluid">
-                   <div>
+                  <div>
                         <div class="container r_tbdr h-100 ">header</div>
                    </div>
                    <div>
-                    <div class="container r_tbdr h-100 ">header</div>
-                   </div>
+                    <div class="container-fluid r_tbdr h-100 r_footer_bottom_last">
+                      <div class="row h-100">
+                        <div class="col ">
+                          <ul class="nav mt-3 r_fs-7">
+                            <li class="nav-item  me-1 " >
+                              <a class="nav-link active  text-white" aria-current="page" href="#"><i class="fa-solid fa-bag-shopping text-warning pe-2 "></i>Become a seller</a>
+                            </li>
+                            <li class="nav-item  me-1">
+                              <a class="nav-link text-white" href="#"><i class="fa-solid fa-star pe-2 text-warning"></i>advertise</a>
+                            </li>
+                            <li class="nav-item  me-1">
+                              <a class="nav-link text-white" href="#"><i class="fa-solid fa-gift pe-2  text-warning"></i>Gift cards</a>
+                            </li>
+                            <li class="nav-item  ">
+                              <a class="nav-link text-white "><i class="fa-regular fa-circle-question pe-2  text-warning"></i>Help center</a>
+                            </li>
+                           
+                          </ul>
+                        </div>
+                        <div class="col-2 r_tbdr ps-2 h-100">
+                          <ul class="nav mt-4 ">
+                            <li class="nav-item text-white p-0 m-0">
+                              <h6 class="r_fs-7">©2007-2022 Flipkart.com</h6>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-4 r_tbdr ">
+                          <img src="./bottom/2.svg" class="img-fluid mt-4" alt="">
+                        </div>
+                       </div>
+                    </div>
+                  </div>
                 </div>
-                
             </footer>
         </div>
         
@@ -548,14 +586,3 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
